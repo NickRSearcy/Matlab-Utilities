@@ -6,8 +6,14 @@
 % http://creativecommons.org/licenses/by/3.0/us/
 %
 %   Returns the cumulative nchoosek(v,k) result starting with k=1 and
-%   ending at k=k_input. Results are returned in a matrix as nchoosek() but
-%   are zero-padded. Ensure that 0 is not in the input vector v.
+%   ending at k=k_input. 
+%
+%   Input: v,k
+%   v is a vector of unique values to be chosen from
+%   k is an integer >0 and is the final amount chosen
+%   Output: out
+%   Results are returned in a matrix as nchoosek() but are zero-padded.
+%   Ensure that 0 is not in the input vector v.
 %
 
 function out = cum_nchoosek(v,k)
